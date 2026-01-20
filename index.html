@@ -7,28 +7,29 @@
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap"
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap"
         rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
     <title>TECHWAVE</title>
 </head>
 
 <body class="font-fam">
-    <header>
-        <nav class="bg-[#1A0B2E] flex justify-around items-center py-[20px] border-b-1 border-[#412567]">
-            <h3 class="font-bold text-white text-3xl">Tech<span
-                    class="text-transparent bg-clip-text bg-gradient-to-r from-yellow-400 via-pink-700 to-purple-600">Wave</span>
+    <header class="  bg-[#1A0B2E]" >
+        <nav class=" flex justify-around items-center px-4 py-5 border-b-1 border-[#412567] ">
+            <h3 class="font-bold text-white text-2xl sm:text-3xl">Tech<span class="text-transparent bg-clip-text bg-gradient-to-r from-yellow-400 via-pink-700 to-purple-600">Wave</span>
             </h3>
-            <ul class="flex text-white gap-4 ">
+            <ul class="hidden lg:flex text-white gap-6">
                 <li><a href="">About</a></li>
                 <li><a href="">Episodes</a></li>
                 <li><a href="">Host</a></li>
             </ul>
-            <button
-                class="bg-gradient-to-r from-yellow-400 via-pink-700 to-purple-600 text-white px-6 py-3 rounded-3xl ">Subscribe</button>
-        </nav>
+            <button class="hidden lg:block bg-gradient-to-r from-yellow-400 via-pink-700 to-purple-600 text-white px-6 py-3 rounded-3xl transition duration-300 ease-in-out
+         hover:scale-105 hover:opacity-90 ">Subscribe  <i class="fa-solid fa-arrow-right-arrow-left"></i></button>
+                <img  class=" lg:hidden w-7" src="assets/hamburger-menu.png" alt="">
+            </nav>
         <section>
-            <img src="assets/hero-bg.png" alt="">
+            <img class="sm:w-full" src="assets/hero-bg.png" alt="">
             <img class="mx-auto mt-[-610px]" src="assets/hero-circle.png" alt="">
             <img class="mx-auto mt-[-270px]" src="assets/microphone.png" alt="">
             <span
@@ -38,12 +39,12 @@
                 <p class="text-white mb-[16px]">Your daily dose of tech insights, productivity hacks, and personal
                     growth</p>
                 <button
-                    class=" items-center bg-gradient-to-r from-yellow-400 via-pink-700 to-purple-600 text-white px-[20px] py-[12px] rounded-[10000px]">
+                    class=" transition duration-300 ease-in-out hover:scale-105 hover:opacity-90 items-center bg-gradient-to-r from-yellow-400 via-pink-700 to-purple-600 text-white px-[20px] py-[12px] rounded-[10000px]">
                     <p class="flex gap-[5px] "> <img class="w-[20px] h-[20px]" src="assets/spotify.png" alt=""> Listen
                         On Spotify</p>
                 </button>
                 <button
-                    class="items-center bg-none text-green-700 px-[20px] py-[12px] rounded-[10000px] border-2 border-green-700 ">
+                    class=" transition duration-300 ease-in-out hover:scale-105 hover:opacity-90 items-center bg-none text-green-700 px-[20px] py-[12px] rounded-[10000px] border-2 border-green-700 ">
                     <p class="flex gap-[5px] "><img class="w-[20px] h-[20px]" src="assets/message.png" alt="">Subscribe
                     </p>
                 </button>
@@ -66,19 +67,19 @@
 
 
             </section>
-            <div class="lg:flex lg:justify-around mt-[60px] sm:items-center uppercase sm:grid  sm:grid-cols-2">
+            <div class="lg:flex lg:justify-around mt-[60px] items-center uppercase sm:grid  sm:grid-cols-3">
                 <div>
                     <h1 class="font-extrabold text-4xl text-green-400 mb-[5px] text-center">150K+</h1>
-                    <p class="text-white">Monthly Listeners</p>
+                    <p class="text-white mb-[120px] ">Monthly Listeners</p>
                 </div>
                 <div>
                     <h1 class="font-extrabold text-4xl text-green-400 mb-[5px] text-center">200+</h1>
-                    <p class="text-white">Episodes Published</p>
+                    <p class="text-white  mb-[120px] ">Episodes Published</p>
                 </div>
                 <div>
                     <h1 class="font-extrabold text-4xl text-green-400 mb-[5px] text-center">4.5<span
                             class="text-green-400">&#9733;</span> </h1>
-                    <p class="text-white">Average Rating</p>
+                    <p class="text-white mb-[120px] ">Average Rating</p>
                 </div>
                 <div>
                     <h1 class="font-extrabold text-4xl text-green-400 mb-[5px] text-center">50+</h1>
@@ -88,7 +89,7 @@
             </div>
         </div>
         <section class="bg-[#412567]">
-            <h1 class="font-bold text-4xl font-[800] text-center text-white pt-[120px] pb-[60px]">Why Choose TechWave
+            <h1 class="font-bold text-4xl font-[800] text-center text-white lg:pt-[120px] lg:pb-[60px] sm:py-[40px]">Why Choose TechWave
             </h1>
             <div class="w-3/4 mx-auto grid lg:grid-cols-3 gap-[20px]">
                 <div class="bg-[#230E3D] rounded-[40px] py-[40px] px-[40px] lg:row-span-2">
@@ -116,7 +117,7 @@
                         tech visionaries. Our host secures exclusive conversations you won't find anywhere else, diving
                         deep into their journeys, failures, and success strategies.</p>
                 </div>
-                <div class="bg-[#230E3D] rounded-[40px] py-[40px] px-[40px] lg:mb-[120px] sm:mb-[80px] ">
+                <div class="bg-[#230E3D] rounded-[40px] py-[40px] px-[40px] lg:mb-[120px] sm:pb-[80px] ">
                     <img class="mb-[16px]" src="assets/resource.png" alt="">
                     <h3 class="mb-[16px] text-white font-bold text-2xl">Rich Resources</h3>
                     <p class="mb-[16px] text-white">Access show notes, transcripts, and additional learning materials
@@ -128,7 +129,7 @@
         </section>
 
         <section class="bg-[#1A0B2E]">
-            <h3 class="text-white font-bold text-3xl text-center sm:pt-[50px] lg:pt-[120px] lg:mb-[40px] sm:mb-[40px]">
+            <h3 class="text-white font-bold text-3xl text-center  lg:pt-[120px] lg:mb-[40px] sm:p-[40px]">
                 Featured Episodes</h3>
             <div class="max-w-3/4 mx-auto lg:flex justify-center ">
                 <div>
@@ -149,7 +150,8 @@
                 <div>
                     <div class="max-w-[380px]">
                         <div class="w-[380px] h-[215px] px-[24px] rounded-[24px]">
-                            <iframe class="w-full h-full rounded-xl" src="https://www.youtube.com/embed/oX7OduG1YmI">
+                            <iframe class="w-full h-full rounded-xl" src="https://www.youtube.com/embed/bdsc3Spm6Sw
+">
                             </iframe>
                         </div>
 
@@ -164,7 +166,8 @@
                 <div>
                     <div class="max-w-[380px]">
                         <div class="w-[380px] h-[215px] px-[24px] rounded-[24px]">
-                            <iframe class="w-full h-full rounded-xl" src="https://www.youtube.com/embed/oX7OduG1YmI">
+                            <iframe class="w-full h-full rounded-xl" src="https://www.youtube.com/embed/XmWkcePhf84
+">
                             </iframe>
                         </div>
 
